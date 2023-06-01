@@ -24,8 +24,8 @@ describe Solver do
   end
 
   describe '#reverse' do
-   it 'returns "oluh" for the word "hola"' do
-    expect(subject.reverse('hulo')).to eql('oluh')
-   end
+    it 'returns "oluh" for the word "hola"' do
+      expect(subject.reverse('hulo')).to eql('oluh')
+    end
   end
 end
