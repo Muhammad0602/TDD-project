@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # The Solver class provides various methods for solving logical problems
 class Solver
   def factorial(num)
