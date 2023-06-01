@@ -33,6 +33,7 @@ describe Solver do
     it 'returns the right string for a given number' do
       expect(subject.fizzbuzz(6)).to eql('fizz')
       expect(subject.fizzbuzz(5)).to eql('buzz')
+      expect(subject.fizzbuzz(15)).to eql('fizzbuzz')
     end
   end
 end
