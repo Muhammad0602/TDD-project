@@ -11,7 +11,7 @@ describe Solver do
        end
 
        it 'raises an expection when the number is negative' do
-        expect(subject.factorial(-2)).to eql('raise an error')
+        expect{ subject.factorial(-2) }.to raise_error(ArgumentError, 'Input number must be positive')
        end
     end
 end
