@@ -28,4 +28,10 @@ describe Solver do
       expect(subject.reverse('hulo')).to eql('oluh')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'returns the right string for a given number' do
+      expect(subject.fizzbuzz(6)).to eql('fizz')
+    end
+  end
 end
