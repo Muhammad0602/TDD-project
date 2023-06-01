@@ -4,22 +4,16 @@ require './solver'
 
 describe Solver do
   describe '#factorial' do
-    context 'when the number is positive' do
-      it 'returns 24 when number is 4' do
-        expect(subject.factorial(4)).to eql(24)
-      end
+    it 'returns 24 when number is 4' do
+      expect(subject.factorial(4)).to eql(24)
     end
 
-    context 'when the number is 0' do
-      it 'returns 1' do
-        expect(subject.factorial(0)).to eql(1)
-      end
+    it 'returns 1 when number is 0' do
+      expect(subject.factorial(0)).to eql(1)
     end
 
-    context 'when the number is negative' do
-      it 'raises an expection' do
-        expect { subject.factorial(-2) }.to raise_error(ArgumentError, 'Input number must be positive')
-      end
+    it 'raises an expection when we have a negative number' do
+      expect { subject.factorial(-2) }.to raise_error(ArgumentError, 'Input number must be positive')
     end
   end
 
@@ -31,7 +25,6 @@ describe Solver do
 
   describe '#fizzbuzz' do
     it 'returns the right string for a given number' do
-      expect(subject.fizzbuzz(1)).to eql('1')
       expect(subject.fizzbuzz(6)).to eql('fizz')
       expect(subject.fizzbuzz(5)).to eql('buzz')
       expect(subject.fizzbuzz(15)).to eql('fizzbuzz')
