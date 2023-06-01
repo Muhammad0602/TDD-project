@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require './solver'
+
 describe Solver do
   describe '#factorial' do
     it 'returns 24 when number is 4' do
