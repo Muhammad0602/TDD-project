@@ -1,3 +1,4 @@
+require './solver'
 
 describe Solver do
 
